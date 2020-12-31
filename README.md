@@ -34,10 +34,10 @@ $ cd /home/workspace/
 $ git clone https://github.com/MarkBroerkens/RoboND-myrobot myrobot
 ```
 
-#### add library
+#### add Model Library and custom models
 ```sh
 $ git clone https://github.com/osrf/gazebo_models
-$ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/gazebo_models
+$ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/gazebo_models:$HOME/myrobot/model
 ```
 
 #### Step 3 Compile the code
@@ -48,10 +48,6 @@ $ cd build/
 $ cmake ../
 $ make
 ```
-
-#### Add model library
-
-
 
 #### Step 4 Add the library path to the Gazebo plugin path  
 ```sh
