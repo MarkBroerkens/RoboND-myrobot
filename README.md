@@ -15,7 +15,7 @@ The **myrobot** lab part of RoboND Gazebo Basics lesson. The purpose of this lab
     │   ├── nanocrawler                # Model files of four-wheeled robot
     │   │   ├── model.config
     │   │   ├── model.sdf
-    │   ├── nanocrawler                # Model files of building
+    │   ├── home                       # Model files of building
     │   │   ├── model.config
     │   │   ├── model.sdf 
     ├── script                         # Gazebo World plugin C++ script      
