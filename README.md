@@ -12,6 +12,12 @@ The **myrobot** lab part of RoboND Gazebo Basics lesson. The purpose of this lab
     │   ├── robot
     │   │   ├── model.config
     │   │   ├── model.sdf
+    │   ├── nanocrawler                # Model files of four-wheeled robot
+    │   │   ├── model.config
+    │   │   ├── model.sdf
+    │   ├── nanocrawler                # Model files of building
+    │   │   ├── model.config
+    │   │   ├── model.sdf 
     ├── script                         # Gazebo World plugin C++ script      
     │   ├── hello.cpp
     ├── world                          # Gazebo main World empty scene
@@ -34,13 +40,13 @@ $ cd /home/workspace/
 $ git clone https://github.com/MarkBroerkens/RoboND-myrobot myrobot
 ```
 
-#### add Model Library and custom models
+#### Step 3 add Model Library and custom models
 ```sh
 $ git clone https://github.com/osrf/gazebo_models
 $ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/gazebo_models:$HOME/myrobot/model
 ```
 
-#### Step 3 Compile the code
+#### Step 4 Compile the code
 ```sh
 $ cd /home/workspace/myrobot/
 $ mkdir build
@@ -57,12 +63,12 @@ $ export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/myrobot/build
 #### Step 5 Run the Gazebo World file  
 ```sh
 $ cd /home/workspace/myrobot/world/
-$ gazebo myworld
+$ gazebo myworld.world
 ```
 
-### Output
-The hello world message and the two-wheeled robot inside a Gazebo World should both launch as follow: 
-![alt text](images/output.png)
+### Output 
+![alt text](images/myworld1.png)
+![alt text](images/myworld2.png)
 
 
     
